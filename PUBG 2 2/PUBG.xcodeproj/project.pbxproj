@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3221BBB822A526C4001B4246 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221BBB722A526C4001B4246 /* IntentHandler.swift */; };
+		3221BBC122A526C4001B4246 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3221BBC022A526C4001B4246 /* IntentsUI.framework */; };
+		3221BBC422A526C4001B4246 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221BBC322A526C4001B4246 /* IntentViewController.swift */; };
+		3221BBC722A526C4001B4246 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3221BBC522A526C4001B4246 /* MainInterface.storyboard */; };
+		3221BBCB22A526C4001B4246 /* PUBGSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3221BBBE22A526C4001B4246 /* PUBGSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3221BBCE22A526C4001B4246 /* PUBGSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3221BBB522A526C4001B4246 /* PUBGSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE03CB98229A4434005C5B80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB97229A4434005C5B80 /* AppDelegate.swift */; };
+		CE03CB9A229A4434005C5B80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CB99229A4434005C5B80 /* HomeViewController.swift */; };
+		CE03CB9D229A4434005C5B80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03CB9B229A4434005C5B80 /* Main.storyboard */; };
+		CE03CB9F229A443E005C5B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE03CB9E229A443E005C5B80 /* Assets.xcassets */; };
+		CE03CBA2229A443E005C5B80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03CBA0229A443E005C5B80 /* LaunchScreen.storyboard */; };
+		CE03CBAD229A443F005C5B80 /* PUBGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CBAC229A443F005C5B80 /* PUBGTests.swift */; };
+		CE03CBB8229A443F005C5B80 /* PUBGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CBB7229A443F005C5B80 /* PUBGUITests.swift */; };
+		CE03CBC9229A55A7005C5B80 /* WeaponsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CBC8229A55A7005C5B80 /* WeaponsData.swift */; };
+		CE03CBCB229A59B8005C5B80 /* AKMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03CBCA229A59B8005C5B80 /* AKMViewController.swift */; };
+		CE6A10E7229CFC00009A1CAE /* AKMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10E6229CFC00009A1CAE /* AKMTableViewCell.swift */; };
+		CE6A10EB229D1ACB009A1CAE /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10EA229D1ACB009A1CAE /* ProgressView.swift */; };
+		CE6A10F0229D3E81009A1CAE /* M416TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10EF229D3E81009A1CAE /* M416TableViewCell.swift */; };
+		CE6A10F2229D410E009A1CAE /* M416ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10F1229D410E009A1CAE /* M416ViewController.swift */; };
+		CE6A10F5229E37F8009A1CAE /* AWMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10F4229E37F8009A1CAE /* AWMViewController.swift */; };
+		CE6A10F7229E3808009A1CAE /* AWMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10F6229E3808009A1CAE /* AWMTableViewCell.swift */; };
+		CE6A10FA229E3B01009A1CAE /* M24TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10F9229E3B01009A1CAE /* M24TableViewCell.swift */; };
+		CE6A10FC229E3B12009A1CAE /* M24ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10FB229E3B12009A1CAE /* M24ViewController.swift */; };
+		CE6A10FF229E3DB7009A1CAE /* SCARLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A10FE229E3DB7009A1CAE /* SCARLViewController.swift */; };
+		CE6A1101229E3DC9009A1CAE /* SCARLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A1100229E3DC9009A1CAE /* SCARLTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3221BBC922A526C4001B4246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE03CB8C229A4433005C5B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3221BBBD22A526C4001B4246;
+			remoteInfo = PUBGSiriIntentUI;
+		};
+		3221BBCC22A526C4001B4246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE03CB8C229A4433005C5B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3221BBB422A526C4001B4246;
+			remoteInfo = PUBGSiriIntent;
+		};
+		CE03CBA9229A443F005C5B80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE03CB8C229A4433005C5B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE03CB93229A4433005C5B80;
+			remoteInfo = PUBG;
+		};
+		CE03CBB4229A443F005C5B80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE03CB8C229A4433005C5B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE03CB93229A4433005C5B80;
+			remoteInfo = PUBG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3221BBD522A526C4001B4246 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3221BBCB22A526C4001B4246 /* PUBGSiriIntentUI.appex in Embed App Extensions */,
+				3221BBCE22A526C4001B4246 /* PUBGSiriIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3221BBB022A52479001B4246 /* PUBG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PUBG.entitlements; sourceTree = "<group>"; };
+		3221BBB522A526C4001B4246 /* PUBGSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PUBGSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3221BBB722A526C4001B4246 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		3221BBB922A526C4001B4246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3221BBBE22A526C4001B4246 /* PUBGSiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PUBGSiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3221BBC022A526C4001B4246 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		3221BBC322A526C4001B4246 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		3221BBC622A526C4001B4246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3221BBC822A526C4001B4246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3221BBD822A52B65001B4246 /* PUBGSiriIntentUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PUBGSiriIntentUI.entitlements; sourceTree = "<group>"; };
+		CE03CB94229A4434005C5B80 /* PUBG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PUBG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE03CB97229A4434005C5B80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE03CB99229A4434005C5B80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE03CB9C229A4434005C5B80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE03CB9E229A443E005C5B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE03CBA1229A443E005C5B80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE03CBA3229A443E005C5B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE03CBA8229A443F005C5B80 /* PUBGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PUBGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE03CBAC229A443F005C5B80 /* PUBGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUBGTests.swift; sourceTree = "<group>"; };
+		CE03CBAE229A443F005C5B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE03CBB3229A443F005C5B80 /* PUBGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PUBGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE03CBB7229A443F005C5B80 /* PUBGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUBGUITests.swift; sourceTree = "<group>"; };
+		CE03CBB9229A443F005C5B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE03CBC8229A55A7005C5B80 /* WeaponsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsData.swift; sourceTree = "<group>"; };
+		CE03CBCA229A59B8005C5B80 /* AKMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKMViewController.swift; sourceTree = "<group>"; };
+		CE6A10E6229CFC00009A1CAE /* AKMTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKMTableViewCell.swift; sourceTree = "<group>"; };
+		CE6A10EA229D1ACB009A1CAE /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		CE6A10EF229D3E81009A1CAE /* M416TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M416TableViewCell.swift; sourceTree = "<group>"; };
+		CE6A10F1229D410E009A1CAE /* M416ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M416ViewController.swift; sourceTree = "<group>"; };
+		CE6A10F4229E37F8009A1CAE /* AWMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWMViewController.swift; sourceTree = "<group>"; };
+		CE6A10F6229E3808009A1CAE /* AWMTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWMTableViewCell.swift; sourceTree = "<group>"; };
+		CE6A10F9229E3B01009A1CAE /* M24TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M24TableViewCell.swift; sourceTree = "<group>"; };
+		CE6A10FB229E3B12009A1CAE /* M24ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M24ViewController.swift; sourceTree = "<group>"; };
+		CE6A10FE229E3DB7009A1CAE /* SCARLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCARLViewController.swift; sourceTree = "<group>"; };
+		CE6A1100229E3DC9009A1CAE /* SCARLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCARLTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3221BBB222A526C4001B4246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3221BBBB22A526C4001B4246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3221BBC122A526C4001B4246 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CB91229A4433005C5B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CBA5229A443F005C5B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CBB0229A443F005C5B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3221BBB622A526C4001B4246 /* PUBGSiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				3221BBB722A526C4001B4246 /* IntentHandler.swift */,
+				3221BBB922A526C4001B4246 /* Info.plist */,
+			);
+			path = PUBGSiriIntent;
+			sourceTree = "<group>";
+		};
+		3221BBBF22A526C4001B4246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3221BBC022A526C4001B4246 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3221BBC222A526C4001B4246 /* PUBGSiriIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				3221BBD822A52B65001B4246 /* PUBGSiriIntentUI.entitlements */,
+				3221BBC322A526C4001B4246 /* IntentViewController.swift */,
+				3221BBC522A526C4001B4246 /* MainInterface.storyboard */,
+				3221BBC822A526C4001B4246 /* Info.plist */,
+			);
+			path = PUBGSiriIntentUI;
+			sourceTree = "<group>";
+		};
+		CE03CB8B229A4433005C5B80 = {
+			isa = PBXGroup;
+			children = (
+				CE03CB96229A4434005C5B80 /* PUBG */,
+				CE03CBAB229A443F005C5B80 /* PUBGTests */,
+				CE03CBB6229A443F005C5B80 /* PUBGUITests */,
+				3221BBB622A526C4001B4246 /* PUBGSiriIntent */,
+				3221BBC222A526C4001B4246 /* PUBGSiriIntentUI */,
+				3221BBBF22A526C4001B4246 /* Frameworks */,
+				CE03CB95229A4434005C5B80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE03CB95229A4434005C5B80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE03CB94229A4434005C5B80 /* PUBG.app */,
+				CE03CBA8229A443F005C5B80 /* PUBGTests.xctest */,
+				CE03CBB3229A443F005C5B80 /* PUBGUITests.xctest */,
+				3221BBB522A526C4001B4246 /* PUBGSiriIntent.appex */,
+				3221BBBE22A526C4001B4246 /* PUBGSiriIntentUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE03CB96229A4434005C5B80 /* PUBG */ = {
+			isa = PBXGroup;
+			children = (
+				3221BBB022A52479001B4246 /* PUBG.entitlements */,
+				CE03CB99229A4434005C5B80 /* HomeViewController.swift */,
+				CE6A10EA229D1ACB009A1CAE /* ProgressView.swift */,
+				CE03CBC8229A55A7005C5B80 /* WeaponsData.swift */,
+				CE6A10FD229E3D9B009A1CAE /* SCAR-L */,
+				CE6A10F8229E3AE4009A1CAE /* M24 */,
+				CE6A10F3229E379E009A1CAE /* AWM */,
+				CE03CBC7229A544C005C5B80 /* AKM */,
+				CE6A10EC229D3E46009A1CAE /* M416 */,
+				CE03CB97229A4434005C5B80 /* AppDelegate.swift */,
+				CE03CB9B229A4434005C5B80 /* Main.storyboard */,
+				CE03CB9E229A443E005C5B80 /* Assets.xcassets */,
+				CE03CBA0229A443E005C5B80 /* LaunchScreen.storyboard */,
+				CE03CBA3229A443E005C5B80 /* Info.plist */,
+			);
+			path = PUBG;
+			sourceTree = "<group>";
+		};
+		CE03CBAB229A443F005C5B80 /* PUBGTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE03CBAC229A443F005C5B80 /* PUBGTests.swift */,
+				CE03CBAE229A443F005C5B80 /* Info.plist */,
+			);
+			path = PUBGTests;
+			sourceTree = "<group>";
+		};
+		CE03CBB6229A443F005C5B80 /* PUBGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE03CBB7229A443F005C5B80 /* PUBGUITests.swift */,
+				CE03CBB9229A443F005C5B80 /* Info.plist */,
+			);
+			path = PUBGUITests;
+			sourceTree = "<group>";
+		};
+		CE03CBC7229A544C005C5B80 /* AKM */ = {
+			isa = PBXGroup;
+			children = (
+				CE03CBCA229A59B8005C5B80 /* AKMViewController.swift */,
+				CE6A10E6229CFC00009A1CAE /* AKMTableViewCell.swift */,
+			);
+			path = AKM;
+			sourceTree = "<group>";
+		};
+		CE6A10EC229D3E46009A1CAE /* M416 */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A10F1229D410E009A1CAE /* M416ViewController.swift */,
+				CE6A10EF229D3E81009A1CAE /* M416TableViewCell.swift */,
+			);
+			path = M416;
+			sourceTree = "<group>";
+		};
+		CE6A10F3229E379E009A1CAE /* AWM */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A10F4229E37F8009A1CAE /* AWMViewController.swift */,
+				CE6A10F6229E3808009A1CAE /* AWMTableViewCell.swift */,
+			);
+			path = AWM;
+			sourceTree = "<group>";
+		};
+		CE6A10F8229E3AE4009A1CAE /* M24 */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A10FB229E3B12009A1CAE /* M24ViewController.swift */,
+				CE6A10F9229E3B01009A1CAE /* M24TableViewCell.swift */,
+			);
+			path = M24;
+			sourceTree = "<group>";
+		};
+		CE6A10FD229E3D9B009A1CAE /* SCAR-L */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A10FE229E3DB7009A1CAE /* SCARLViewController.swift */,
+				CE6A1100229E3DC9009A1CAE /* SCARLTableViewCell.swift */,
+			);
+			path = "SCAR-L";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3221BBB422A526C4001B4246 /* PUBGSiriIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3221BBD222A526C4001B4246 /* Build configuration list for PBXNativeTarget "PUBGSiriIntent" */;
+			buildPhases = (
+				3221BBB122A526C4001B4246 /* Sources */,
+				3221BBB222A526C4001B4246 /* Frameworks */,
+				3221BBB322A526C4001B4246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PUBGSiriIntent;
+			productName = PUBGSiriIntent;
+			productReference = 3221BBB522A526C4001B4246 /* PUBGSiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3221BBBD22A526C4001B4246 /* PUBGSiriIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3221BBCF22A526C4001B4246 /* Build configuration list for PBXNativeTarget "PUBGSiriIntentUI" */;
+			buildPhases = (
+				3221BBBA22A526C4001B4246 /* Sources */,
+				3221BBBB22A526C4001B4246 /* Frameworks */,
+				3221BBBC22A526C4001B4246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PUBGSiriIntentUI;
+			productName = PUBGSiriIntentUI;
+			productReference = 3221BBBE22A526C4001B4246 /* PUBGSiriIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CE03CB93229A4433005C5B80 /* PUBG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE03CBBC229A443F005C5B80 /* Build configuration list for PBXNativeTarget "PUBG" */;
+			buildPhases = (
+				CE03CB90229A4433005C5B80 /* Sources */,
+				CE03CB91229A4433005C5B80 /* Frameworks */,
+				CE03CB92229A4433005C5B80 /* Resources */,
+				3221BBD522A526C4001B4246 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3221BBCA22A526C4001B4246 /* PBXTargetDependency */,
+				3221BBCD22A526C4001B4246 /* PBXTargetDependency */,
+			);
+			name = PUBG;
+			productName = PUBG;
+			productReference = CE03CB94229A4434005C5B80 /* PUBG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE03CBA7229A443F005C5B80 /* PUBGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE03CBBF229A443F005C5B80 /* Build configuration list for PBXNativeTarget "PUBGTests" */;
+			buildPhases = (
+				CE03CBA4229A443F005C5B80 /* Sources */,
+				CE03CBA5229A443F005C5B80 /* Frameworks */,
+				CE03CBA6229A443F005C5B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE03CBAA229A443F005C5B80 /* PBXTargetDependency */,
+			);
+			name = PUBGTests;
+			productName = PUBGTests;
+			productReference = CE03CBA8229A443F005C5B80 /* PUBGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE03CBB2229A443F005C5B80 /* PUBGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE03CBC2229A443F005C5B80 /* Build configuration list for PBXNativeTarget "PUBGUITests" */;
+			buildPhases = (
+				CE03CBAF229A443F005C5B80 /* Sources */,
+				CE03CBB0229A443F005C5B80 /* Frameworks */,
+				CE03CBB1229A443F005C5B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE03CBB5229A443F005C5B80 /* PBXTargetDependency */,
+			);
+			name = PUBGUITests;
+			productName = PUBGUITests;
+			productReference = CE03CBB3229A443F005C5B80 /* PUBGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE03CB8C229A4433005C5B80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Yichun;
+				TargetAttributes = {
+					3221BBB422A526C4001B4246 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3221BBBD22A526C4001B4246 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					CE03CB93229A4433005C5B80 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					CE03CBA7229A443F005C5B80 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CE03CB93229A4433005C5B80;
+					};
+					CE03CBB2229A443F005C5B80 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CE03CB93229A4433005C5B80;
+					};
+				};
+			};
+			buildConfigurationList = CE03CB8F229A4433005C5B80 /* Build configuration list for PBXProject "PUBG" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE03CB8B229A4433005C5B80;
+			productRefGroup = CE03CB95229A4434005C5B80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE03CB93229A4433005C5B80 /* PUBG */,
+				CE03CBA7229A443F005C5B80 /* PUBGTests */,
+				CE03CBB2229A443F005C5B80 /* PUBGUITests */,
+				3221BBB422A526C4001B4246 /* PUBGSiriIntent */,
+				3221BBBD22A526C4001B4246 /* PUBGSiriIntentUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3221BBB322A526C4001B4246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3221BBBC22A526C4001B4246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3221BBC722A526C4001B4246 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CB92229A4433005C5B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE03CBA2229A443E005C5B80 /* LaunchScreen.storyboard in Resources */,
+				CE03CB9F229A443E005C5B80 /* Assets.xcassets in Resources */,
+				CE03CB9D229A4434005C5B80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CBA6229A443F005C5B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CBB1229A443F005C5B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3221BBB122A526C4001B4246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3221BBB822A526C4001B4246 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3221BBBA22A526C4001B4246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3221BBC422A526C4001B4246 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CB90229A4433005C5B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6A10F5229E37F8009A1CAE /* AWMViewController.swift in Sources */,
+				CE6A10E7229CFC00009A1CAE /* AKMTableViewCell.swift in Sources */,
+				CE03CB9A229A4434005C5B80 /* HomeViewController.swift in Sources */,
+				CE6A10F7229E3808009A1CAE /* AWMTableViewCell.swift in Sources */,
+				CE6A10FC229E3B12009A1CAE /* M24ViewController.swift in Sources */,
+				CE6A10F2229D410E009A1CAE /* M416ViewController.swift in Sources */,
+				CE03CB98229A4434005C5B80 /* AppDelegate.swift in Sources */,
+				CE6A10FA229E3B01009A1CAE /* M24TableViewCell.swift in Sources */,
+				CE03CBCB229A59B8005C5B80 /* AKMViewController.swift in Sources */,
+				CE6A1101229E3DC9009A1CAE /* SCARLTableViewCell.swift in Sources */,
+				CE6A10F0229D3E81009A1CAE /* M416TableViewCell.swift in Sources */,
+				CE6A10FF229E3DB7009A1CAE /* SCARLViewController.swift in Sources */,
+				CE03CBC9229A55A7005C5B80 /* WeaponsData.swift in Sources */,
+				CE6A10EB229D1ACB009A1CAE /* ProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CBA4229A443F005C5B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE03CBAD229A443F005C5B80 /* PUBGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE03CBAF229A443F005C5B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE03CBB8229A443F005C5B80 /* PUBGUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3221BBCA22A526C4001B4246 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3221BBBD22A526C4001B4246 /* PUBGSiriIntentUI */;
+			targetProxy = 3221BBC922A526C4001B4246 /* PBXContainerItemProxy */;
+		};
+		3221BBCD22A526C4001B4246 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3221BBB422A526C4001B4246 /* PUBGSiriIntent */;
+			targetProxy = 3221BBCC22A526C4001B4246 /* PBXContainerItemProxy */;
+		};
+		CE03CBAA229A443F005C5B80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE03CB93229A4433005C5B80 /* PUBG */;
+			targetProxy = CE03CBA9229A443F005C5B80 /* PBXContainerItemProxy */;
+		};
+		CE03CBB5229A443F005C5B80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE03CB93229A4433005C5B80 /* PUBG */;
+			targetProxy = CE03CBB4229A443F005C5B80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3221BBC522A526C4001B4246 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3221BBC622A526C4001B4246 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		CE03CB9B229A4434005C5B80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE03CB9C229A4434005C5B80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE03CBA0229A443E005C5B80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE03CBA1229A443E005C5B80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3221BBD022A526C4001B4246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9W399TV4M;
+				INFOPLIST_FILE = PUBGSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User1.PUBG.PUBGSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3221BBD122A526C4001B4246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9W399TV4M;
+				INFOPLIST_FILE = PUBGSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User1.PUBG.PUBGSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3221BBD322A526C4001B4246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9W399TV4M;
+				INFOPLIST_FILE = PUBGSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User1.PUBG.PUBGSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3221BBD422A526C4001B4246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9W399TV4M;
+				INFOPLIST_FILE = PUBGSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User1.PUBG.PUBGSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE03CBBA229A443F005C5B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE03CBBB229A443F005C5B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE03CBBD229A443F005C5B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PUBG/PUBG.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9W399TV4M;
+				INFOPLIST_FILE = PUBG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User1.PUBG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE03CBBE229A443F005C5B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PUBG/PUBG.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9W399TV4M;
+				INFOPLIST_FILE = PUBG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User1.PUBG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE03CBC0229A443F005C5B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8DP54MPAU;
+				INFOPLIST_FILE = PUBGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User.PUBGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PUBG.app/PUBG";
+			};
+			name = Debug;
+		};
+		CE03CBC1229A443F005C5B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8DP54MPAU;
+				INFOPLIST_FILE = PUBGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User.PUBGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PUBG.app/PUBG";
+			};
+			name = Release;
+		};
+		CE03CBC3229A443F005C5B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8DP54MPAU;
+				INFOPLIST_FILE = PUBGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User.PUBGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PUBG;
+			};
+			name = Debug;
+		};
+		CE03CBC4229A443F005C5B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8DP54MPAU;
+				INFOPLIST_FILE = PUBGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = User.PUBGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PUBG;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3221BBCF22A526C4001B4246 /* Build configuration list for PBXNativeTarget "PUBGSiriIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3221BBD022A526C4001B4246 /* Debug */,
+				3221BBD122A526C4001B4246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3221BBD222A526C4001B4246 /* Build configuration list for PBXNativeTarget "PUBGSiriIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3221BBD322A526C4001B4246 /* Debug */,
+				3221BBD422A526C4001B4246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE03CB8F229A4433005C5B80 /* Build configuration list for PBXProject "PUBG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE03CBBA229A443F005C5B80 /* Debug */,
+				CE03CBBB229A443F005C5B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE03CBBC229A443F005C5B80 /* Build configuration list for PBXNativeTarget "PUBG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE03CBBD229A443F005C5B80 /* Debug */,
+				CE03CBBE229A443F005C5B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE03CBBF229A443F005C5B80 /* Build configuration list for PBXNativeTarget "PUBGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE03CBC0229A443F005C5B80 /* Debug */,
+				CE03CBC1229A443F005C5B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE03CBC2229A443F005C5B80 /* Build configuration list for PBXNativeTarget "PUBGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE03CBC3229A443F005C5B80 /* Debug */,
+				CE03CBC4229A443F005C5B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE03CB8C229A4433005C5B80 /* Project object */;
+}
